@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+# Código Fonte do Projeto Markdown Previewer do [Free Code Camp](https://www.freecodecamp.org/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Criar um pré-visualizador de markdown
 
-## Available Scripts
+Objetivo: criar uma aplicação que funcione de modo semelhante ao que vemos em: https://markdown-previewer.freecodecamp.rocks/.
 
-In the project directory, you can run:
+Atenda às histórias de usuário abaixo e faça com que todos os testes passem. Use quaisquer bibliotecas ou APIs de que você precisar. Dê ao projeto o seu próprio estilo pessoal.
 
-### `npm start`
+Você pode usar qualquer mistura de HTML, JavaScript, CSS, Bootstrap, SASS, React, Redux e JQuery para completar este projeto. Você deve usar um framework de front-end (como React por exemplo) porque essa seção trata de aprender frameworks de front-end. Tecnologias adicionais não listadas acima não são recomendadas e usá-las é por sua conta e risco. Estamos buscando apoiar outros frameworks de front-end, como Angular e Vue, mas eles não são atualmente suportados. Vamos aceitar e tentar corrigir todos os relatórios de problemas que usem o conjunto de tecnologias sugeridas para esse projeto. Boa programação para você!
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+História de usuário nº 1: eu consigo ver um elemento textarea com o id="editor" correspondente.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+História de usuário nº 2: eu consigo ver um elemento com o id="preview" correspondente.
 
-### `npm test`
+História de usuário nº 3: quando eu insiro texto no elemento #editor, o elemento #preview é atualizado enquanto eu escrevo para exibir o conteúdo do textarea.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+História de usuário nº 4: quando insiro marcação do GitHub no elemento #editor, o texto é renderizado como HTML no elemento #preview enquanto eu escrevo (DICA: você não precisa analisar a marcação você mesmo - você pode importar a biblioteca Marked para isso: https://cdnjs.com/libraries/marked).
 
-### `npm run build`
+História de usuário nº 5: quando meu pré-visualizador de marcação carregar pela primeira vez, o texto padrão no campo #editor deve conter uma marcação válida que represente pelo menos um de cada um dos elementos a seguir: um elemento (tamanho H1), um subelemento de título (tamanho H2), um link, um código em linha, um código de bloco, uma lista de item, um blockquote, uma imagem e um texto em negrito.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+História de usuário nº 6: quando meu pré-visualizador de marcação carregar pela primeira vez, a marcação padrão no campo #editor deve ser renderizada como HTML no elemento #preview.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Bônus opcional (você não precisa de aprovação nesse teste): meu pré-visualizador de marcação interpreta o retorno de carro e o renderiza como elementos br (quebra de linha).
