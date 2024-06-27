@@ -1,0 +1,16 @@
+
+@media screen and (min-width: 319px) and (max-width: 426px){
+
+    #div_editor, #div_pre_visualizacao{
+        width: 95%;
+    }
+
+}
+
+@media screen and (min-width: 767px) and (max-width: 1025px){
+
+    #div_editor, #div_pre_visualizacao{
+        width: 80%;
+    }
+
+}
